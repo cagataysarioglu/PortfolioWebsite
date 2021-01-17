@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.http import HttpResponse
 from pages.forms import ContactForm
 from django.contrib import messages
 
@@ -12,13 +13,15 @@ def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            form.save()
-            # messages.add_message(request, messages.SUCCESS, 'İletiniz başarıyla gönderildi.')
-            messages.success(request, 'İletiniz başarıyla gönderildi.')
+            try:
+                form.save()
+            except:
+                return HttpResponse('Invalid header found.')
+            messages.add_message(request, messages.SUCCESS, 'İletiniz başarıyla gönderildi.')
+            # return redirect("contact")
             form = ContactForm()
     else:
         # messages.add_message(request, messages.ERROR, 'İletiniz gönderilirken bir hata oluştu.')
-        messages.error(request, 'İletiniz gönderilirken bir hata oluştu.')
         form = ContactForm()
 
     context = {

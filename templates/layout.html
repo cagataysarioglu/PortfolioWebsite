@@ -4,10 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/png" rel="icon" sizes="97x97" href="">
+    <meta name="robots" content="index, follow, noarchive">
+    <meta name="revisit-after" content="7 Days">
+    <meta name="rating" content="general">
+    <meta name="copyright" content="Copywrite &copy; 2021 | tantrade.net | Tüm hakları saklıdır.">
+    <meta name="reply-to" content="info@atantrade.net">
+    <meta name="designer" content="Haluk Çağatay Sarıoğlu">
+    <meta name="description" content="">
+    <meta name="keywords" content="Tan Ticaret, Tan Trade">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/bootstrap.rtl.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>Tan Trade</title>
+    <style>
+        .sticky{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000000;
+            overflow-x: auto;
+        }
+        .current-link {
+            color: #ffffff;
+        }
+    </style>
 </head>
 <body class="bg-secondary">
     {% include 'partials/_navbar.html' %}
@@ -22,5 +42,26 @@
     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.esm.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script>
+        window.addEventListener("scroll", function(){
+            let header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+        function mouseOver(){
+            document.getElementById("mail").style.color = "#0d6efd";
+        }
+        function mouseOut(){
+            document.getElementById("mail").style.color = "#ffffff";
+        }
+        function setActive() {
+            const item = document.getElementById('navbar').getElementsByTagName('a');
+            for(let i=0; i<item.length; i++) {
+                if(document.location.pathname === item[i].getAttribute('href')) {
+                    item[i].style.color = "#ffffff";
+                }
+            }
+        }
+        window.onload = setActive;
+    </script>
 </body>
 </html>

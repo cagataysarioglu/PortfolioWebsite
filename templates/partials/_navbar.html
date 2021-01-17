@@ -1,10 +1,10 @@
 <header>
-    <div class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <div id="navbar" class="navbar navbar-expand-lg bg-primary navbar-dark">
         <div class="container">
             <ul class="navbar-nav mr-auto">
                 <li
                     {% if request.path == '/' %}
-                        class="nav-item shadow active"
+                        class="nav-item shadow"
                     {% else %}
                         class="nav-item"
                     {% endif %}
@@ -13,7 +13,7 @@
                 </li>
                 <li
                     {% if 'urunler' in request.path %}
-                        class="nav-item shadow active"
+                        class="nav-item shadow"
                     {% else %}
                         class="nav-item"
                     {% endif %}
@@ -22,7 +22,7 @@
                 </li>
                 <li
                     {% if 'hakkimizda' in request.path %}
-                        class="nav-item shadow active"
+                        class="nav-item shadow"
                     {% else %}
                         class="nav-item"
                     {% endif %}
@@ -31,7 +31,7 @@
                 </li>
                 <li
                     {% if 'iletisim' in request.path %}
-                        class="nav-item shadow active"
+                        class="nav-item shadow"
                     {% else %}
                         class="nav-item"
                     {% endif %}
