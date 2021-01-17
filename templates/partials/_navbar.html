@@ -1,0 +1,45 @@
+<header>
+    <div class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <div class="container">
+            <ul class="navbar-nav mr-auto">
+                <li
+                    {% if request.path == '/' %}
+                        class="nav-item shadow active"
+                    {% else %}
+                        class="nav-item"
+                    {% endif %}
+                >
+                    <a href="{% url 'index' %}" class="nav-link">Ana Sayfa</a>
+                </li>
+                <li
+                    {% if 'urunler' in request.path %}
+                        class="nav-item shadow active"
+                    {% else %}
+                        class="nav-item"
+                    {% endif %}
+                >
+                    <a href="{% url 'products' %}" class="nav-link">Ürünlerimiz</a>
+                </li>
+                <li
+                    {% if 'hakkimizda' in request.path %}
+                        class="nav-item shadow active"
+                    {% else %}
+                        class="nav-item"
+                    {% endif %}
+                >
+                    <a href="{% url 'about' %}" class="nav-link">Hakkımızda</a>
+                </li>
+                <li
+                    {% if 'iletisim' in request.path %}
+                        class="nav-item shadow active"
+                    {% else %}
+                        class="nav-item"
+                    {% endif %}
+                >
+                    <a href="{% url 'contact' %}" class="nav-link">İletişim</a>
+                </li>
+            </ul>
+            <a href="{% url 'index' %}" class="navbar-brand">Tan Ticaret</a>
+        </div>
+    </div>
+</header>
