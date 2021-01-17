@@ -1,4 +1,3 @@
-# Created by Haluk Çağatay Sarıoğlu from the Republic of Turkey.
 # Created in January, 2021.
 
 """
