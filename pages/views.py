@@ -2,9 +2,14 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from pages.forms import ContactForm
 from django.contrib import messages
+from .models import Carousel
 
 def index(request):
-    return render(request, 'pages/index.html')
+    photos = Carousel.objects.order_by('photo')
+    context = {
+        'photos': photos
+    }
+    return render(request, 'pages/index.html', context)
 
 def about(request):
     return render(request, 'pages/about.html')

@@ -6,25 +6,20 @@
         <h1 class="display-6 text-center text-white">Hoş Geldiniz</h1>
     </div>
 </div>
-<div id="carousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
-      <img src="" class="d-block w-100" alt="">
+{% if photos %}
+    {% for photo in photos %}
+        <div class="carousel">
+            <img id="photo" src="{% static photo.getPhotoPath %}" class="d-block w-100" alt="">
+            <div class="carousel-caption text-lg-right">
+                <button class="btn-primary py-2 px-4" style="border-radius: 0 5px;">
+                    <a href="/urunler/" style="color: #ffffff; text-decoration: none">Ürünlerimize göz atın</a>
+                </button>
+            </div>
+        </div>
+    {% endfor %}
+{% else %}
+    <div class="alert alert-warning">
+        <p>Gösterilecek fotoğraf bulunmuyor.</p>
     </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="" class="d-block w-100" alt="">
-    </div>
-    <div class="carousel-item">
-      <img src="" class="d-block w-100" alt="">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carousel" role="button" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carousel" role="button" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </a>
-</div>
+{% endif %}
 {% endblock %}
