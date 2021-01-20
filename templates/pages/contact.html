@@ -1,14 +1,16 @@
 {% extends 'layout.html' %}
+{% load static %}
 {% block content %}
-<div class="jumbotron jumbotron-fluid py-4 mb-5" style="border-radius: 0 50px; background-color: #4e555b">
-    <div class="container">
-        <h1 class="display-6 text-center text-white">İletişim</h1>
+<div class="jumbotron jumbotron-fluid py-4 mb-5 mt-5" style="border-radius: 0 50px; background-color: #4e555b; background: radial-gradient(circle, #1874cd 17%, #5d478b 57%)">
+    <div class="container" style="height: 45px;">
+        <img src="{% static 'media/banner_logo.png' %}" class="rounded mx-auto d-block" alt="">
+{#        <h1 class="display-6 text-center text-white"></h1>#}
     </div>
 </div>
 <div class="row">
     <div class="col-md-6 mx-auto">
         <div class="card border-dark">
-            <div class="card-header bg-primary text-white text-center"><h4>Bize Ulaşın</h4></div>
+            <div class="card-header text-white text-center" style="background-color: #1874cd;"><h4>Bize Ulaşın</h4></div>
             <div class="card-body bg-dark">
                 <form action="iletisim" method="POST">
                     {% csrf_token %}
