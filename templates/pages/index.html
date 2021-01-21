@@ -10,10 +10,10 @@
 {% if photos %}
     {% for photo in photos %}
         <div class="carousel">
-            <img id="photo" src="{% static photo.getPhotoPath %}" class="d-block w-100" alt="">
-            <div class="carousel-caption text-lg-right">
-                <button class="btn-primary py-2 px-4" style="border-radius: 0 5px;">
-                    <a href="/urunler/" style="color: #ffffff; text-decoration: none">Ürünlerimize göz atın</a>
+            <img id="photo" src="{% static photo.getPhotoPath %}" class="d-block w-100" alt="" style="border-radius: 50px">
+            <div class="carousel-caption">
+                <button class="btn btn-primary py-0 px-0" style="border-radius: 0 5px;">
+                    <a id="pro" class="btn btn-block" href="/urunler/" style="color: #ffffff; text-decoration: none;">Ürünlerimize göz atın</a>
                 </button>
             </div>
         </div>

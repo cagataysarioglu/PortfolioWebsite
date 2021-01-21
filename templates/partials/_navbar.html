@@ -1,46 +1,51 @@
 {% load static %}
 <header>
-    <div id="navbar" class="navbar navbar-expand-lg navbar-dark" style="background-color: #5d478b;">
-        <div class="container">
-            <ul class="navbar-nav mr-auto">
-                <li
-                    {% if request.path == '/' %}
-                        class="nav-item shadow"
-                    {% else %}
-                        class="nav-item"
-                    {% endif %}
-                >
-                    <a href="{% url 'index' %}" class="nav-link">Ana Sayfa</a>
-                </li>
-                <li
-                    {% if 'urunler' in request.path %}
-                        class="nav-item shadow"
-                    {% else %}
-                        class="nav-item"
-                    {% endif %}
-                >
-                    <a href="{% url 'products' %}" class="nav-link">Ürünlerimiz</a>
-                </li>
-                <li
-                    {% if 'hakkimizda' in request.path %}
-                        class="nav-item shadow"
-                    {% else %}
-                        class="nav-item"
-                    {% endif %}
-                >
-                    <a href="{% url 'about' %}" class="nav-link">Hakkımızda</a>
-                </li>
-                <li
-                    {% if 'iletisim' in request.path %}
-                        class="nav-item shadow"
-                    {% else %}
-                        class="nav-item"
-                    {% endif %}
-                >
-                    <a href="{% url 'contact' %}" class="nav-link">İletişim</a>
-                </li>
-            </ul>
-            <a href="{% url 'index' %}" class="navbar-brand"><img src="{% static 'media/navbar_logo.png' %}" alt=""></a>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark" style="background-color: #5d478b;">
+        <div class="container py-2">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapse_menu" aria-controls="collapse_menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapse_menu">
+                <ul class="navbar-nav mr-auto active">
+                    <li class="nav-item"
+{#                        {% if request.path == '/' %}#}
+{#                            class="nav-item shadow"#}
+{#                        {% else %}#}
+{#                            class="nav-item"#}
+{#                        {% endif %}#}
+                    >
+                        <a href="{% url 'index' %}" class="nav-link">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item"
+{#                        {% if 'urunler' in request.path %}#}
+{#                            class="nav-item shadow"#}
+{#                        {% else %}#}
+{#                            class="nav-item"#}
+{#                        {% endif %}#}
+                    >
+                        <a href="{% url 'products' %}" class="nav-link">Ürünlerimiz</a>
+                    </li>
+                    <li class="nav-item"
+{#                        {% if 'hakkimizda' in request.path %}#}
+{#                            class="nav-item shadow"#}
+{#                        {% else %}#}
+{#                            class="nav-item"#}
+{#                        {% endif %}#}
+                    >
+                        <a href="{% url 'about' %}" class="nav-link">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item"
+{#                        {% if 'iletisim' in request.path %}#}
+{#                            class="nav-item shadow"#}
+{#                        {% else %}#}
+{#                            class="nav-item"#}
+{#                        {% endif %}#}
+                    >
+                        <a href="{% url 'contact' %}" class="nav-link">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="{% url 'index' %}" class="navbar-brand"><img class="img-fluid" src="{% static 'media/navbar_logo.png' %}" alt=""></a>
         </div>
-    </div>
+    </nav>
 </header>
