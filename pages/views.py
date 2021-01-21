@@ -33,3 +33,6 @@ def contact(request):
         'form': form
     }
     return render(request, "pages/contact.html", context)
+
+def kvkk(request):
+    return render(request, "pages/kvkk.html")
