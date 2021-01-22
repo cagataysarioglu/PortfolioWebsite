@@ -12,7 +12,7 @@
         <div class="card border-dark">
             <div class="card-header text-white text-center" style="background-color: #1874cd;"><h4>Bize Ulaşın</h4></div>
             <div class="card-body bg-dark">
-                <form action="iletisim" method="POST">
+                <form action="iletisim" method="POST" enctype="multipart/form-data">
                     {% csrf_token %}
                     <div class="form-group my-3">
 {#                            <label for="name_surname">Adınız ve soyadınız:</label>#}
@@ -23,6 +23,11 @@
 {#                            <label for="email">e-Posta adresiniz:</label>#}
                         {{ form.email }}
 {#                            <input type="email" name="email" class="form-control" required>#}
+                    </div>
+                    <div class="form-group mb-3">
+{#                            <label for="image">Konu:</label>#}
+                        {{ form.image }}
+{#                            <input type="text" name="image" class="form-control">#}
                     </div>
                     <div class="form-group mb-3">
 {#                            <label for="subject">Konu:</label>#}

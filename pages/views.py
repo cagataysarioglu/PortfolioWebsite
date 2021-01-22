@@ -16,12 +16,12 @@ def about(request):
 
 def contact(request):
     if request.method == 'POST':
-        form = ContactForm(request.POST)
+        form = ContactForm(request.POST, request.FILES)
         if form.is_valid():
             try:
                 form.save()
             except:
-                return HttpResponse('Invalid header found.')
+                return HttpResponse('Geçersizlik söz konusu!')
             messages.add_message(request, messages.SUCCESS, 'İletiniz başarıyla gönderildi.')
             # return redirect("contact")
             form = ContactForm()
