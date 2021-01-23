@@ -12,8 +12,8 @@
         <div class="carousel">
             <img id="photo" src="{% static photo.getPhotoPath %}" class="d-block w-100" alt="" style="border-radius: 50px">
             <div class="carousel-caption">
-                <button class="btn btn-primary py-0 px-0" style="border-radius: 0 5px;">
-                    <a id="pro" class="btn btn-block" href="/urunler/" style="color: #ffffff; text-decoration: none;">Ürünlerimize göz atın</a>
+                <button class="btn py-0 px-0">
+                    <a id="pro" class="btn btn-block" href="/urunler/" style="text-decoration: none;">Ürünlerimize göz atın</a>
                 </button>
             </div>
         </div>
@@ -23,17 +23,24 @@
         <p>Gösterilecek fotoğraf bulunmuyor.</p>
     </div>
 {% endif %}
-<div class="container">
-    <div class="flip-card mt-5 mx-auto">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-            <h1 class="my-4 py-0" style="font-family: Courier">Teklif al</h1>
+<div class="card p-3 mt-5 mx-auto bg-dark text-white w-50" style="user-select: none;">
+    <h1 class="display-6 text-center text-white">Neden Tan Ticaret?</h1>
+    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab adipisci alias, aliquam amet aperiam aut dolor eos eum ex incidunt, iusto maxime molestias neque odit quisquam sit, soluta sunt. Ad adipisci assumenda cupiditate dolores eius eligendi esse nisi obcaecati tempora tempore? Accusantium amet aperiam assumenda autem beatae dolore et ex excepturi explicabo impedit in labore modi odit, porro quas qui rerum, saepe temporibus veritatis voluptas. Aut expedita quibusdam similique.</p>
+</div>
+<div class="container mt-5">
+    <div class="flip-card mx-auto">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <div><span class="btn text-white" id="offer">Teklif al</span></div>
+            </div>
+            <div class="flip-card-back">
+                <a href="/iletisim"><img id="at" src="{% static 'media/at_icon.png' %}" width="40" height="40" alt=""></a>
+            </div>
         </div>
-        <div class="flip-card-back my-3">
-            <a href="/iletisim" class="far fa-paperclip"></a>
-            <a href="mailto:info@tantrade.net" class="fas fa-at"></a>
-        </div>
-      </div>
     </div>
+</div>
+<div class="img-rounded mt-5 text-center">
+    <img class="mr-3" src="{% static 'media/epoksi_zemin1.jpg' %}" style="border-radius: 50%" width="400" height="400" alt="">
+    <img src="{% static 'media/epoksi_zemin2.jpg' %}" style="border-radius: 50%" width="400" height="400" alt="">
 </div>
 {% endblock %}

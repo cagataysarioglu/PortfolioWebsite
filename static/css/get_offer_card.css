@@ -1,9 +1,9 @@
 .flip-card {
     background-color: transparent;
-    width: 270px;
-    height: 100px;
-    /*perspective: 1000px;*/
-    border-radius: 50px;
+    width: 130px;
+    height: 40px;
+    perspective: 1000px;
+    border-radius: 0 20px;
 }
 .flip-card-inner {
     position: relative;
@@ -13,11 +13,10 @@
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 50px;
+    border-radius: 0 20px;
 }
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-    border-radius: 50px;
 }
 .flip-card-front, .flip-card-back {
     position: absolute;
@@ -25,62 +24,34 @@
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    vertical-align: center;
-    border-radius: 50px;
+    border-radius: 0 20px;
 }
 .flip-card-front {
     background-color: #1874cd;
     color: #ffffff;
-    border-radius: 50px;
 }
 .flip-card-back {
     background-color: #5d478b;
-    color: white;
     transform: rotateY(180deg);
-    border-radius: 50px;
 }
-.flip-card-back div a{
-    text-decoration: none;
-    color: #ffffff;
+@media (max-width: 530px) {
+    .flip-card{
+        width: 90px;
+        height: 30px;
+    }
+    #at{width: 30px; height: 30px;}
+    #offer{font-size: 3.5vw;}
 }
-.flip-card-back div a:hover{
-    text-decoration: none;
-    color: #ffffff;
-    font-size: smaller;
-    text-shadow: 2px 2px 3px #1874cd;;
+#pro{
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 140, 255, 0.2);
+    transition: color;
 }
-@media screen and (max-width: 767px) {
-    .flip-card {
-        margin-left: 2.8%;
-        margin-top: 3%;
-        width: 46%;
-    }
-    .flip-card-inner {
-        height: 80px;
-    }
-    .flip-card-back:first-child{
-        margin-top: 0;
-    }
-    .flip-card-back:last-child{
-        margin-top: 0;
-    }
-    .flip-card-back div a{
-        font-size: 17px;
-    }
-    .flip-card-front h1{
-        font-size: 26px;
-        margin: 3px;
-    }
+#pro:hover{
+    color: #000000;
+    background-color: transparent;
+    transition: 1s;
 }
-
-@media screen and (max-width: 480px) {
-    .flip-card {
-        width: 60%;
-    }
-        .flip-card-inner {
-    height: 85px;
-    }
-    .flip-card-back div a{
-        font-size: 7px;
-    }
+@media (max-width: 530px) {
+    #pro {font-size: 3vw;}
 }
