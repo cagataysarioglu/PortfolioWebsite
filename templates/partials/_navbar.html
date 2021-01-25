@@ -1,13 +1,13 @@
 {% load static %}
 <header>
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark" style="background-color: #5d478b; user-select: none;">
-        <div class="container py-2">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #cdc9c9; user-select: none;">
+        <div class="container py-2" style="font-family: 'Poppins', sans-serif;">
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapse_menu" aria-controls="collapse_menu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                <span class="navbar-toggler-icon thead-dark" aria-hidden="true"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapse_menu">
-                <ul class="navbar-nav mr-auto active">
-                    <li class="nav-item"
+                <ul id="navbar" class="navbar-nav mr-auto active">
+                    <li class="nav-item mr-5"
 {#                        {% if request.path == '/' %}#}
 {#                            class="nav-item shadow"#}
 {#                        {% else %}#}
@@ -16,7 +16,7 @@
                     >
                         <a href="{% url 'index' %}" class="nav-link">Ana Sayfa</a>
                     </li>
-                    <li class="nav-item"
+                    <li class="nav-item mr-5"
 {#                        {% if 'urunler' in request.path %}#}
 {#                            class="nav-item shadow"#}
 {#                        {% else %}#}
@@ -25,7 +25,7 @@
                     >
                         <a href="{% url 'products' %}" class="nav-link">Ürünlerimiz</a>
                     </li>
-                    <li class="nav-item"
+                    <li class="nav-item mr-5"
 {#                        {% if 'hakkimizda' in request.path %}#}
 {#                            class="nav-item shadow"#}
 {#                        {% else %}#}
@@ -45,7 +45,7 @@
                     </li>
                 </ul>
             </div>
-            <a href="{% url 'index' %}" class="navbar-brand"><img class="img-fluid" src="{% static 'media/navbar_logo.png' %}" alt=""></a>
+            <a href="{% url 'index' %}" class="navbar-brand" style="color: #000000; font-size: x-large;">TAN TRADE</a>
         </div>
     </nav>
 </header>

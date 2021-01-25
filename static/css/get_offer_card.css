@@ -31,7 +31,7 @@
     color: #ffffff;
 }
 .flip-card-back {
-    background-color: #5d478b;
+    background-color: #cdc9c9;
     transform: rotateY(180deg);
 }
 @media (max-width: 530px) {
