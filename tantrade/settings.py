@@ -23,11 +23,12 @@ MESSAGE_TAGS = {
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '')
+# SECRET_KEY = 'c*^*jlmbd-oj45ryt)9m_=krqd$9bdaw=)f0%9w(ng%6(1$cs9'
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'c*^*jlmbd-oj45ryt)9m_=krqd$9bdaw=)f0%9w(ng%6(1$cs9')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+DEBUG = True
+# DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 ALLOWED_HOSTS = []  # 'tantrade.net'
 
