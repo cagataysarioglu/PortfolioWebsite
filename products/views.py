@@ -1,11 +1,13 @@
 from django.shortcuts import render
 from django.shortcuts import get_object_or_404
-from .models import Product
+from .models import Product, Category
 
 def index(request):
     products = Product.objects.all()
+    categories = Category.objects.all()
     context = {
-        'products': products
+        'products': products,
+        'categories': categories
     }
     return render(request, "products/list.html", context)
 
