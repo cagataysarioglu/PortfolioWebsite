@@ -29,6 +29,7 @@
 .flip-card-front {
     background-color: #1874cd;
     color: #ffffff;
+        border-radius: 0 20px;
 }
 .flip-card-back {
     background-color: #cdc9c9;

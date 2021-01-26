@@ -18,5 +18,14 @@ def detail(request, product_id):
     }
     return render(request, "products/detail.html", context)
 
+def byCategory(request, category_id, slug):
+    categories = Category.objects.all()
+    products = Product.objects.filter(category_id=category_id)
+    context = {
+        'categories': categories,
+        'products': products
+    }
+    return render(request, "products/by_category.html", context)
+
 def search(request):
     return render(request, "products/search.html")

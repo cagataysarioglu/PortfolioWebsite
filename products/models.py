@@ -4,6 +4,7 @@ class Category(models.Model):
     parent_id = models.IntegerField(verbose_name="Kategori Nu.")
     name = models.CharField(max_length=70, verbose_name="Kategori Adı")
     description = models.TextField(blank=True, null=True, verbose_name="Kategori Açıklaması")
+    slug = models.SlugField(verbose_name='Bulunak')
 
     def __str__(self):
         return self.name
@@ -16,8 +17,8 @@ class Product(models.Model):
     image = models.ImageField(blank=True, null=True, verbose_name="Ürün Görseli")
     description = models.TextField(blank=True, null=True, verbose_name="Ürün Açıklaması")
     details = models.TextField(blank=True, null=True, verbose_name="Ürün Detayı")
+    slug = models.SlugField(verbose_name='Bulunak', blank=True)
     is_published = models.BooleanField(default=True, verbose_name='Yayında mı?')
-    slug = models.SlugField(verbose_name='Bulunak')
 
     def __str__(self):
         return self.name
