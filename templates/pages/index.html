@@ -7,15 +7,22 @@
 {#        <h1 class="display-6 text-center text-white"></h1>#}
     </div>
 </div>
+<div class="mx-auto text-center my-5">
+    <h3 style="font-family: 'Courgette', cursive; user-select: none">Hoş Geldiniz</h3>
+</div>
+<div class="card p-3 my-5 mx-auto bg-dark text-white w-75" style="user-select: none;">
+    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab adipisci alias, aliquam amet aperiam aut dolor eos eum ex incidunt, iusto maxime molestias neque odit quisquam sit, soluta sunt. Ad adipisci assumenda cupiditate dolores eius eligendi esse nisi obcaecati tempora tempore? Accusantium amet aperiam assumenda autem beatae dolore et ex excepturi explicabo impedit in labore modi odit, porro quas qui rerum, saepe temporibus veritatis voluptas. Aut expedita quibusdam similique.</p>
+</div>
+<img class="img-fluid" src="{% static 'media/index_design.png' %}" alt="" style="user-select: none">
+<div class="mx-auto text-center my-5">
+    <button class="btn mx-auto">
+        <a id="pro" class="btn btn-block" href="/urunler/" style="text-decoration: none; font-family: 'Courgette', cursive;">Ürünlere göz at</a>
+    </button>
+</div>
 {% if photos %}
     {% for photo in photos %}
         <div class="carousel">
             <img id="photo" src="{% static photo.getPhotoPath %}" class="d-block w-100" alt="" style="border-radius: 50px">
-            <div class="carousel-caption">
-                <button class="btn py-0 px-0">
-                    <a id="pro" class="btn btn-block" href="/urunler/" style="text-decoration: none;">Ürünlerimize göz atın</a>
-                </button>
-            </div>
         </div>
     {% endfor %}
 {% else %}
@@ -23,24 +30,25 @@
         <p>Gösterilecek fotoğraf bulunmuyor.</p>
     </div>
 {% endif %}
-<div class="card p-3 mt-5 mx-auto bg-dark text-white w-50" style="user-select: none;">
-    <h1 class="display-6 text-center text-white">Neden Tan Ticaret?</h1>
-    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab adipisci alias, aliquam amet aperiam aut dolor eos eum ex incidunt, iusto maxime molestias neque odit quisquam sit, soluta sunt. Ad adipisci assumenda cupiditate dolores eius eligendi esse nisi obcaecati tempora tempore? Accusantium amet aperiam assumenda autem beatae dolore et ex excepturi explicabo impedit in labore modi odit, porro quas qui rerum, saepe temporibus veritatis voluptas. Aut expedita quibusdam similique.</p>
-</div>
 <div class="container mt-5">
     <div class="flip-card mx-auto">
         <div class="flip-card-inner">
             <div class="flip-card-front">
-                <div><span class="btn text-white" id="offer">Teklif al</span></div>
+                <div class="btn text-white" id="offer" style="font-family: 'Courgette', cursive;">Teklif al</div>
             </div>
             <div class="flip-card-back">
-                <a href="/iletisim"><img id="at" src="{% static 'media/at_icon.png' %}" width="40" height="40" alt=""></a>
+                <a class="btn" href="/iletisim"><img id="at" src="{% static 'media/at_icon.png' %}" width="30" height="30" alt=""></a>
             </div>
         </div>
     </div>
 </div>
-<div class="img-rounded mt-5 text-center">
-    <img class="mr-3" src="{% static 'media/epoksi_zemin1.jpg' %}" style="border-radius: 50%" width="400" height="400" alt="">
-    <img src="{% static 'media/epoksi_zemin2.jpg' %}" style="border-radius: 50%" width="400" height="400" alt="">
+<div class="card p-3 my-5 mx-auto w-75" style="user-select: none; background-color: #cdc9c9;">
+    <h1 class="display-6 text-center">Neden Tan Ticaret?</h1>
+    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab adipisci alias, aliquam amet aperiam aut dolor eos eum ex incidunt, iusto maxime molestias neque odit quisquam sit, soluta sunt. Ad adipisci assumenda cupiditate dolores eius eligendi esse nisi obcaecati tempora tempore? Accusantium amet aperiam assumenda autem beatae dolore et ex excepturi explicabo impedit in labore modi odit, porro quas qui rerum, saepe temporibus veritatis voluptas. Aut expedita quibusdam similique.</p>
+</div>
+<img class="img-fluid" src="{% static 'media/index_design.png' %}" alt="" style="user-select: none">
+<div class="container mt-5 text-center">
+    <img class="img-fluid mr-5" src="{% static 'media/epoksi_zemin1.jpg' %}" style="border-radius: 50%; border: 4px double #cdc9c9;" width="370" height="370" alt="">
+    <img class="img-fluid" src="{% static 'media/epoksi_zemin2.jpg' %}" style="border-radius: 50%; border: 4px double #cdc9c9;" width="370" height="370" alt="">
 </div>
 {% endblock %}

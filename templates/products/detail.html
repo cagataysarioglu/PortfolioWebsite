@@ -1,18 +1,37 @@
 {% extends 'layout.html' %}
 {% load static %}
 {% block content %}
-    <div class="row mt-5">
-        <div class="col-md-3">
-            <img class="card-img" src="{% static product.getImagePath %}" alt="">
-        </div>
-        <div class="col-md-9">
-            <h1>{{ product.name }}</h1>
-            <hr>
-            <p>{{ product.description }}</p>
-            <hr>
-            <p>{{ product.details }}</p>
-            <hr>
-            <p>{{ product.amount }}</p>
+<div class="jumbotron jumbotron-fluid py-4 my-5" style="border-radius: 0 50px; background: radial-gradient(circle, #343a40 17%, #cdc9c9 57%)">
+    <div class="container" style="height: 45px;">
+        <img src="{% static 'media/banner_logo.png' %}" class="rounded mx-auto d-block" alt="">
+{#        <h1 class="display-6 text-center text-white"></h1>#}
+    </div>
+</div>
+<div class="row my-5">
+    <div class="col-md-3">
+        <img class="card-img" src="{% static product.getImagePath %}" alt="">
+    </div>
+    <div class="col-md-9">
+        <h1>{{ product.name }}</h1>
+        <hr>
+        <p>{{ product.description }}</p>
+        <hr>
+        <p>{{ product.details }}</p>
+        <hr>
+        <p>{{ product.amount }}</p>
+    </div>
+</div>
+<div class="container">
+    <div class="flip-card mx-auto my-4">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <div class="btn text-white" id="offer" style="font-family: 'Courgette', cursive;">Teklif al</div>
+            </div>
+            <div class="flip-card-back">
+                <a class="btn" href="/iletisim"><img id="at" src="{% static 'media/at_icon.png' %}" width="30" height="30" alt=""></a>
+            </div>
         </div>
     </div>
+</div>
+<br>
 {% endblock %}
