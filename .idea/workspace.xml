@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06d6ae34-f816-43a6-89b6-4a53351be59d" name="Default Changelist" comment="Some settings done for deployement.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
