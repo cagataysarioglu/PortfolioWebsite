@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tantrade/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tantrade/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +118,7 @@
       <workItem from="1611643907455" duration="24777000" />
       <workItem from="1611736432703" duration="9288000" />
       <workItem from="1611746680293" duration="3697000" />
-      <workItem from="1611751017362" duration="4097000" />
+      <workItem from="1611751017362" duration="5315000" />
     </task>
     <task id="LOCAL-00001" summary="Update settings.py">
       <created>1610908205876</created>
@@ -392,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611754423804</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Some settings done for deployement.">
+      <created>1611755137269</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1611755137269</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
