@@ -5,68 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06d6ae34-f816-43a6-89b6-4a53351be59d" name="Default Changelist" comment="Some settings done for deployement.">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_01_2021_11_32_[Default_Changelist]/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_01_2021_11_32_[Default_Changelist]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_01_2021_11_32__Default_Changelist_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_01_2021_12_36_[Default_Changelist]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_01_2021_12_36__Default_Changelist_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/tantrade.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/migrations/0003_carousel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/migrations/0004_auto_20210118_1854.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/migrations/0005_contact_image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/migrations/0006_auto_20210122_1229.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/migrations/0007_auto_20210122_1244.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/migrations/0002_auto_20210125_1221.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/migrations/0003_auto_20210125_1821.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/products/migrations/0005_auto_20210126_1215.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/004.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/sunu1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/sunu2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/sunu3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/sunu4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/sunu5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/sunu6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/at_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/epoksi_zemin1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/epoksi_zemin2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/index_design.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/css/get_offer_card.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/css/sidebar_menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/img/005_srP01O2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/img/Bumin_Börülüoğlu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/img/Börü_J7LwKyQ.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/img/M._Kemâl_Atatürk.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/img/Nobili_Duvar_Kağıdı_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/img/img/uploads/Bozkır_atlı_Türk_minyatürü.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/img/sunu1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/img/sunu1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/img/sunu2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/img/sunu2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/img/sunu3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/img/sunu3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/img/sunu4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/img/sunu4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/img/sunu5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/img/sunu5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/img/sunu6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/img/sunu6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/media/at_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/media/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/media/banner_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/media/epoksi_zemin1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/media/epoksi_zemin2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/media/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/media/menu_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/media/navbar_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/media/navbar_logo_mini.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tantrade/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tantrade/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +32,6 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedIndex" value="1" />
@@ -175,7 +113,7 @@
       <workItem from="1611483812932" duration="5666000" />
       <workItem from="1611559823250" duration="23524000" />
       <workItem from="1611643907455" duration="24777000" />
-      <workItem from="1611736432703" duration="6639000" />
+      <workItem from="1611736432703" duration="6865000" />
     </task>
     <task id="LOCAL-00001" summary="Update settings.py">
       <created>1610908205876</created>
@@ -310,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611743361486</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Some settings done for deployement.">
+      <created>1611743995587</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1611743995587</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
