@@ -133,5 +133,3 @@ MEDIA_URL = '/img/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/img')
 
 django_heroku.settings(locals())
-
-
