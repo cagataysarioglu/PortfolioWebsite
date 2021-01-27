@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'c*^*jlmbd-oj45ryt)9m_=krqd$9bd
 DEBUG = True
 # DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = []  # 'tantrade.net'
+ALLOWED_HOSTS = ['127.0.0.1', 'tantrade.herokuapp.com', 'tantrade.net']
 
 # Application definition
 INSTALLED_APPS = [
