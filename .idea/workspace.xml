@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06d6ae34-f816-43a6-89b6-4a53351be59d" name="Default Changelist" comment="Some settings done for deployement." />
+    <list default="true" id="06d6ae34-f816-43a6-89b6-4a53351be59d" name="Default Changelist" comment="Some settings done for deployement.">
+      <change afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,8 +22,8 @@
       <list>
         <option value="JavaScript File" />
         <option value="Python Script" />
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -112,7 +116,7 @@
       <workItem from="1611559823250" duration="23524000" />
       <workItem from="1611643907455" duration="24777000" />
       <workItem from="1611736432703" duration="9288000" />
-      <workItem from="1611746680293" duration="303000" />
+      <workItem from="1611746680293" duration="1088000" />
     </task>
     <task id="LOCAL-00001" summary="Update settings.py">
       <created>1610908205876</created>
@@ -296,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611746874406</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Some settings done for deployement.">
+      <created>1611747278621</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1611747278621</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
