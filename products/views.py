@@ -1,10 +1,14 @@
 from django.shortcuts import render
 from django.shortcuts import get_object_or_404
 from .models import Product, Category
+from django.db.models import Q
 
 def index(request):
-    products = Product.objects.all()
     categories = Category.objects.all()
+    products = Product.objects.all()
+    query = request.GET.get('q')
+    if query:
+        products = products.filter(Q(name__icontains=query) | Q(description__icontains=query) | Q(amount__icontains=query)).distinct()
     context = {
         'products': products,
         'categories': categories
