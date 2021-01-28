@@ -45,3 +45,10 @@
     background-color: transparent;
     transition: 1s;
 }
+.animation {
+  letter-spacing: 0.1em;
+}
+.animation .letter {
+  display: inline-block;
+  line-height: 1em;
+}
