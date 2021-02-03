@@ -1,5 +1,5 @@
 {% extends 'layout.html' %}
-{% load static %}
+{% load static i18n %}
 {% block content %}
 <div class="jumbotron jumbotron-fluid py-4 mb-5 mt-5" style="border-radius: 0 50px; background: radial-gradient(circle, #343a40 17%, #cdc9c9 57%)">
     <div class="container" style="height: 45px;">
@@ -10,7 +10,7 @@
 <div class="row my-5">
     <div class="col-md-6 mx-auto">
         <div class="card border-dark">
-            <div class="card-header text-white text-center" style="background-color: #1874cd; user-select: none; font-family: 'Poppins', sans-serif;"><h4>Bize Ulaşın</h4></div>
+            <div class="card-header text-white text-center" style="background-color: #1874cd; user-select: none; font-family: 'Poppins', sans-serif;"><h4>{% trans 'Bize Ulaşın' %}</h4></div>
             <div class="card-body bg-dark">
                 <form action="iletisim" method="POST" enctype="multipart/form-data">
                     {% csrf_token %}
@@ -44,7 +44,7 @@
                         <label class="form-check-label text-white-50" for="check" style="font-size: 13px"><a href="/kvkk" target="_blank" style="text-decoration: none">KVKK Aydınlatma Metni</a>'ni okudum, onaylıyorum.</label>
                     </div>
                     <br>
-                    <button type="submit" class="btn-primary py-2 px-4" style="float: right; border-radius: 0 5px;">Gönder</button>
+                    <button type="submit" class="btn-primary py-2 px-4" style="float: right; border-radius: 0 5px;">{% trans 'Gönder' %}</button>
                 </form>
             </div>
         </div>

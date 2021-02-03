@@ -1,5 +1,5 @@
 {% extends 'layout.html' %}
-{% load static %}
+{% load static i18n %}
 {% block content %}
 <div class="jumbotron jumbotron-fluid py-4 my-5" style="border-radius: 0 50px; background: radial-gradient(circle, #343a40 17%, #cdc9c9 57%)">
     <div class="container" style="height: 45px;">
@@ -25,7 +25,7 @@
     <div class="flip-card mx-auto my-4">
         <div class="flip-card-inner">
             <div class="flip-card-front">
-                <div class="btn text-white" id="offer" style="font-family: 'Courgette', cursive;">Teklif al</div>
+                <div class="btn text-white" id="offer" style="font-family: 'Poppins', cursive;">{% trans 'Teklif al' %}</div>
             </div>
             <div class="flip-card-back">
                 <a class="btn" href="/iletisim"><img id="at" src="{% static 'media/at_icon.png' %}" width="30" height="30" alt=""></a>

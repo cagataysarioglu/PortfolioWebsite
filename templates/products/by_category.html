@@ -1,5 +1,5 @@
 {% extends 'layout.html' %}
-{% load static %}
+{% load static i18n %}
 {% load humanize %}
 {% block content %}
 <div class="jumbotron jumbotron-fluid py-4 mb-5 mt-5" style="border-radius: 0 50px; background: radial-gradient(circle, #343a40 17%, #cdc9c9 57%)">
@@ -10,11 +10,11 @@
 </div>
 <div class="mx-auto text-center my-5" style="user-select: none">
     {% if 'beton-yuzey-sertlestiriciler' in request.path %}
-        <h3 style="font-family: 'Poppins', sans-serif;">Beton Yüzey Sertleştiriciler Kategorisine Ait Ürünler</h3>
+        <h3 style="font-family: 'Poppins', sans-serif;">{% trans 'Beton Yüzey Sertleştiriciler Kategorisine Ait Ürünler' %}</h3>
     {% elif 'kur-membranlari-ve-cilalar' in request.path %}
-        <h3 style="font-family: 'Poppins', sans-serif;">Kür Membranları ve Cilalar Kategorisine Ait Ürünler</h3>
+        <h3 style="font-family: 'Poppins', sans-serif;">{% trans 'Kür Membranları ve Cilalar Kategorisine Ait Ürünler' %}</h3>
     {% elif 'epoksi-zemin-kaplama-ve-malzemeleri' in request.path %}
-        <h3 style="font-family: 'Poppins', sans-serif;">Epoksi Zemin Kaplama ve Malzemeleri Kategorisine Ait Ürünler</h3>
+        <h3 style="font-family: 'Poppins', sans-serif;">{% trans 'Epoksi Zemin Kaplama ve Malzemeleri Kategorisine Ait Ürünler' %}</h3>
     {% endif %}
 </div>
 <div class="col-md-12">

@@ -1,5 +1,5 @@
 {% extends 'layout.html' %}
-{% load static %}
+{% load static i18n %}
 {% load humanize %}
 {% block content %}
 <div class="jumbotron jumbotron-fluid py-4 mb-5 mt-5" style="border-radius: 0 50px; background: radial-gradient(circle, #343a40 17%, #cdc9c9 57%)">
@@ -9,7 +9,7 @@
     </div>
 </div>
 <div class="mx-auto text-center my-5">
-    <h3 style="font-family: 'Poppins', sans-serif; user-select: none">Kategoriler</h3>
+    <h3 style="font-family: 'Poppins', sans-serif; user-select: none">{% trans 'Kategoriler' %}</h3>
 </div>
 <div class="list-group mb-5 w-75 mx-auto">
     {% for category in categories %}
@@ -22,13 +22,13 @@
     {% endfor %}
 </div>
 <div class="mx-auto text-center my-5">
-    <h3 style="font-family: 'Poppins', sans-serif; user-select: none">Tüm Ürünler</h3>
+    <h3 style="font-family: 'Poppins', sans-serif; user-select: none">{% trans 'Tüm Ürünler' %}</h3>
 </div>
 <form class="form-inline my-5" method="GET" role="search" action="">
     <div class="input-group w-75">
-        <input type="search" name="q" class="form-control ml-3" style="border: 1px solid #343a40;" placeholder="Aratacağınız sözcüğü giriniz" value="{{ request.GET.q }}"/>
+        <input type="search" name="q" class="form-control ml-3" style="border: 1px solid #343a40;" placeholder="{% trans 'Aratacağınız sözcüğü giriniz' %}" value="{{ request.GET.q }}"/>
         <span class="input-group-btn">
-            <input type="submit" class="btn btn-primary ml-2"/>
+            <input type="submit" class="btn btn-primary ml-2" value="{% trans 'Ara' %}"/>
         </span>
     </div>
 </form>

@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-03 19:05+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\pages\forms.py:10
+msgid "Ad ve soyad"
+msgstr "Name and surname"
+
+#: .\pages\forms.py:11
+msgid "e-Posta adresi"
+msgstr "e-Mail address"
+
+#: .\pages\forms.py:12
+msgid "Konu"
+msgstr "Subject"
+
+#: .\pages\forms.py:13
+msgid "Görsel (İsteğe bağlı)"
+msgstr "Image (Optional)"
+
+#| msgid "İletişim"
+msgid "İleti"
+msgstr "Contact"
+
+#: .\tantrade\settings.py:112
+msgid "Turkish"
+msgstr "Türkçe"
+
+#: .\tantrade\settings.py:112
+msgid "English"
+msgstr "İngilizce"
+
+#: .\tantrade\urls.py:30
+msgid "urunler/"
+msgstr "products/"
+
+#: .\templates\layout.html:87
+msgid "Seç"
+msgstr "Use"
+
+#: .\templates\pages\about.html:11
+msgid "Biz Kimiz?"
+msgstr "Who Are We?"
+
+#: .\templates\pages\contact.html:13
+msgid "Bize Ulaşın"
+msgstr "Contact Us"
+
+#: .\templates\pages\contact.html:47
+msgid "Gönder"
+msgstr "Submit"
+
+#: .\templates\pages\index.html:11
+msgid "Hoş Geldiniz"
+msgstr "Welcome"
+
+#: .\templates\pages\index.html:20
+msgid "Ürünlere göz at"
+msgstr "Browse the products"
+
+#: .\templates\pages\index.html:38 .\templates\products\detail.html:28
+msgid "Teklif al"
+msgstr "Get offer"
+
+#: .\templates\pages\index.html:48
+msgid "Neden Tan Trade?"
+msgstr "Why Tan Trade?"
+
+#: .\templates\partials\_footer.html:10
+msgid "Tan Trade &COPY; 2021 - Tüm hakları saklıdır."
+msgstr "Tan Trade &COPY; 2021 - All rights reserved."
+
+#: .\templates\partials\_navbar.html:17
+msgid "Ana Sayfa"
+msgstr "Home"
+
+#: .\templates\partials\_navbar.html:26
+msgid "Ürünlerimiz"
+msgstr "Products"
+
+#: .\templates\partials\_navbar.html:35
+msgid "Hakkımızda"
+msgstr "About"
+
+#: .\templates\partials\_navbar.html:44
+msgid "İletişim"
+msgstr "Contact"
+
+#: .\templates\products\by_category.html:13
+msgid "Beton Yüzey Sertleştiriciler Kategorisine Ait Ürünler"
+msgstr "Products of Concrete Surface Hardeners Category"
+
+#: .\templates\products\by_category.html:15
+msgid "Kür Membranları ve Cilalar Kategorisine Ait Ürünler"
+msgstr "Products of Curing Membranes and Polishes Category"
+
+#: .\templates\products\by_category.html:17
+msgid "Epoksi Zemin Kaplama ve Malzemeleri Kategorisine Ait Ürünler"
+msgstr "Products of Epoxy Floor Coating and Materials Category"
+
+#: .\templates\products\list.html:12
+msgid "Kategoriler"
+msgstr "Categories"
+
+#: .\templates\products\list.html:25
+msgid "Tüm Ürünler"
+msgstr "All Products"
+
+#: .\templates\products\list.html:29
+msgid "Aratacağınız sözcüğü giriniz"
+msgstr "Enter the word to search"
+
+#: .\templates\products\list.html:31
+msgid "Ara"
+msgstr "Search"

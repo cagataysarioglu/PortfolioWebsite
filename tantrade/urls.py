@@ -17,11 +17,18 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.conf.urls.i18n import i18n_patterns
+from django.utils.translation import gettext_lazy as _
+from pages.views import selectLanguage as selang
 
 urlpatterns = [
-    path('', include('pages.urls')),
-    path('urunler/', include('products.urls')),
-    path('yonetim/', admin.site.urls),
+    path('selang/', selang, name='selang'),
 ]
+urlpatterns += i18n_patterns(
+    path('', include('pages.urls')),
+    path('yonetim/', admin.site.urls),
+    path(_('urunler/'), include('products.urls')),
+    prefix_default_language=False
+)
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

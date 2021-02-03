@@ -1,4 +1,4 @@
-{% load static %}
+{% load static i18n %}
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -68,9 +68,24 @@
         #kvkk p{text-indent:50px;}
         #who_are_we p{text-indent:50px;}
     </style>
+    <title>TAN TRADE</title>
 </head>
 <body class="bg-secondary" onload="setActive()">
     {% include 'partials/_navbar.html' %}
+    <form class="text-right mr-1 mt-1" action="{% url 'selang' %}" method="POST">
+        {% csrf_token %}
+        <select name="language">
+            {% get_current_language as LANGUAGE_CODE %}
+            LANGUAGE_CODE: {{ LANGUAGE_CODE }}
+            {% get_available_languages as LANGUAGES %}
+            {% for language in LANGUAGES %}
+            <option value="{{ language.0 }}" {% if language.0 == LANGUAGE_CODE %} selected{% endif %}>
+                {{ language.0|language_name_local }} ({{ language.0 }})
+            </option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="{% trans 'Seç' %}">
+    </form>
     <main>
         {% include 'partials/_alert.html' %}
         <div class="container mt-4">
