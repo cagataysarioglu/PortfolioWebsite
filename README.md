@@ -1,1 +1,1 @@
-# The web site of Tan Trade Co.
+# My Django based web site work.
