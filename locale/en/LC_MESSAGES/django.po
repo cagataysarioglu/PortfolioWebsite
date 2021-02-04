@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-03 19:05+0300\n"
+"POT-Creation-Date: 2021-02-04 12:03+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\hcswebsite\settings.py:112
+msgid "Turkish"
+msgstr "Türkçe"
+
+#: .\hcswebsite\settings.py:112
+msgid "English"
+msgstr "İngilizce"
+
+#: .\hcswebsite\urls.py:30
+msgid "urunler/"
+msgstr "products/"
 
 #: .\pages\forms.py:10
 msgid "Ad ve soyad"
@@ -34,21 +46,9 @@ msgstr "Subject"
 msgid "Görsel (İsteğe bağlı)"
 msgstr "Image (Optional)"
 
-#| msgid "İletişim"
+#: .\pages\forms.py:14
 msgid "İleti"
 msgstr "Contact"
-
-#: .\tantrade\settings.py:112
-msgid "Turkish"
-msgstr "Türkçe"
-
-#: .\tantrade\settings.py:112
-msgid "English"
-msgstr "İngilizce"
-
-#: .\tantrade\urls.py:30
-msgid "urunler/"
-msgstr "products/"
 
 #: .\templates\layout.html:87
 msgid "Seç"
@@ -79,12 +79,14 @@ msgid "Teklif al"
 msgstr "Get offer"
 
 #: .\templates\pages\index.html:48
-msgid "Neden Tan Trade?"
-msgstr "Why Tan Trade?"
+msgid "Neden .....?"
+msgstr ""
 
 #: .\templates\partials\_footer.html:10
-msgid "Tan Trade &COPY; 2021 - Tüm hakları saklıdır."
-msgstr "Tan Trade &COPY; 2021 - All rights reserved."
+#, fuzzy
+#| msgid "Tan Trade &COPY; 2021 - Tüm hakları saklıdır."
+msgid "....... &COPY; 2021 - Tüm hakları saklıdır."
+msgstr "....... &COPY; 2021 - All rights reserved."
 
 #: .\templates\partials\_navbar.html:17
 msgid "Ana Sayfa"
