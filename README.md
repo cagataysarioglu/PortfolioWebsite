@@ -1,1 +1,1 @@
-# My Django based web site work.
+# Django based portfolio web site.
